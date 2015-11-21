@@ -1,0 +1,11 @@
+D:\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe.config
+D:\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+D:\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
+D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csprojResolveAssemblyReference.cache
+D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Form_Main.resources
+D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Properties.Resources.resources
+D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.GenerateResource.Cache
+D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.exe
+D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.pdb
+D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Form_Rank.resources
+D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Form_Setting.resources
