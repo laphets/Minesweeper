@@ -376,12 +376,14 @@ namespace Minesweeper
 
         private bool OpenMine(int sx,int sy)
         {
-            bool bFlag = false;
+            bool bFlag = true;
             for(int i=0;i<8;i++)
             {
                 //获取偏移量
                 int x = MouseFocus.X + dx[i];
                 int y = MouseFocus.Y + dy[i];
+                if (x < 1 || x > nWidth || y < 1 || y > nHeight)
+                    continue;
                 if(pState[x,y]==0)  //问号
                 {
                     pState[x, y] = 1;   //打开
@@ -456,18 +458,21 @@ namespace Minesweeper
                         //获取偏移量
                         int x = MouseFocus.X + dx[i];
                         int y = MouseFocus.Y + dy[i];
+                        if (x < 1 || x > nWidth || y < 1 || y > nHeight)
+                            continue;
                         if (pState[x, y] == 2)      //红旗
                             nFlagCnt++;
                         if (pState[x, y] == 3)  //问号
                             nDoubtCnt++;
-                        if(nFlagCnt==nSysCnt||nFlagCnt+nDoubtCnt==nSysCnt)  //打开九宫格
+                    }
+                    if (nFlagCnt == nSysCnt || nFlagCnt + nDoubtCnt == nSysCnt)  //打开九宫格
+                    {
+                        bool bFlag = OpenMine(MouseFocus.X, MouseFocus.Y);
+                        if (!bFlag)  //周围有地雷
                         {
-                            bool bFlag = OpenMine(MouseFocus.X, MouseFocus.Y);
-                            if(!bFlag)  //周围有地雷
-                            {
-                                //结束游戏
-                                GameLost();
-                            }
+                            //结束游戏
+                            GameLost();
+                            return;
                         }
                     }
                 }
