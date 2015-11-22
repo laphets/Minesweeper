@@ -517,6 +517,16 @@ namespace Minesweeper
             bMouseLeft = bMouseRight = false;
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
         private void 关于AToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShellAbout(this.Handle, "扫雷", "开发人员：罗文卿，吴书晗\n我的Blog : www.laphets.com", this.Icon.Handle);

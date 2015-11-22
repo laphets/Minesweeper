@@ -56,6 +56,10 @@
   <PropertyGroup>
     <ApplicationIcon>mine_128px_1155813_easyicon.net.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />

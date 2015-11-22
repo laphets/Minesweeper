@@ -52,6 +52,7 @@
             this.Label_Mine = new System.Windows.Forms.Label();
             this.Label_Timer = new System.Windows.Forms.Label();
             this.Timer_Main = new System.Windows.Forms.Timer(this.components);
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.MenuStrip_Main.SuspendLayout();
             this.TableLayoutPanel_Main.SuspendLayout();
             this.SuspendLayout();
@@ -189,7 +190,7 @@
             // 关于AToolStripMenuItem
             // 
             this.关于AToolStripMenuItem.Name = "关于AToolStripMenuItem";
-            this.关于AToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.关于AToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.关于AToolStripMenuItem.Text = "关于(&A)";
             this.关于AToolStripMenuItem.Click += new System.EventHandler(this.关于AToolStripMenuItem_Click);
             // 
@@ -246,6 +247,17 @@
             this.Timer_Main.Interval = 1000;
             this.Timer_Main.Tick += new System.EventHandler(this.Timer_Main_Tick);
             // 
+            // notifyIcon
+            // 
+            this.notifyIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIcon.BalloonTipText = "扫雷正在运行......\r\nBulid By laphets";
+            this.notifyIcon.BalloonTipTitle = "Minesweeper";
+            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+            this.notifyIcon.Text = "Minesweeper";
+            this.notifyIcon.Visible = true;
+            this.notifyIcon.DoubleClick += new System.EventHandler(this.关于AToolStripMenuItem_Click);
+            this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -254,13 +266,14 @@
             this.ClientSize = new System.Drawing.Size(879, 418);
             this.Controls.Add(this.TableLayoutPanel_Main);
             this.Controls.Add(this.MenuStrip_Main);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.MenuStrip_Main;
             this.MaximizeBox = false;
             this.Name = "Form_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Minesweeper";
+            this.Text = " Minesweeper";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form_Main_Paint);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_Main_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form_Main_MouseMove);
@@ -298,6 +311,7 @@
         private System.Windows.Forms.Label Label_Mine;
         private System.Windows.Forms.Label Label_Timer;
         private System.Windows.Forms.Timer Timer_Main;
+        public System.Windows.Forms.NotifyIcon notifyIcon;
     }
 }
 
