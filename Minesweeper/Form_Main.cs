@@ -527,9 +527,15 @@ namespace Minesweeper
 
         }
 
+        private void 我的BToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Blog Blog = new Form_Blog();
+            Blog.ShowDialog();
+        }
+
         private void 关于AToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShellAbout(this.Handle, "扫雷", "开发人员：罗文卿，吴书晗\n我的Blog : www.laphets.com", this.Icon.Handle);
+            ShellAbout(this.Handle, "扫雷", "开发人员：罗文卿\n我的Blog : www.laphets.com", this.Icon.Handle);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

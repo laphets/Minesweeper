@@ -9,3 +9,4 @@ D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Form_Setting.resour
 D:\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe.config
 D:\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
 D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.exe
+D:\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Form_Blog.resources

@@ -53,6 +53,7 @@
             this.Label_Timer = new System.Windows.Forms.Label();
             this.Timer_Main = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.我的BToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip_Main.SuspendLayout();
             this.TableLayoutPanel_Main.SuspendLayout();
             this.SuspendLayout();
@@ -182,7 +183,8 @@
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.关于AToolStripMenuItem});
+            this.关于AToolStripMenuItem,
+            this.我的BToolStripMenuItem});
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
             this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(61, 21);
             this.帮助ToolStripMenuItem.Text = "帮助(&H)";
@@ -258,6 +260,13 @@
             this.notifyIcon.DoubleClick += new System.EventHandler(this.关于AToolStripMenuItem_Click);
             this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
             // 
+            // 我的BToolStripMenuItem
+            // 
+            this.我的BToolStripMenuItem.Name = "我的BToolStripMenuItem";
+            this.我的BToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.我的BToolStripMenuItem.Text = "laphets\'s Blog";
+            this.我的BToolStripMenuItem.Click += new System.EventHandler(this.我的BToolStripMenuItem_Click);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -312,6 +321,7 @@
         private System.Windows.Forms.Label Label_Timer;
         private System.Windows.Forms.Timer Timer_Main;
         public System.Windows.Forms.NotifyIcon notifyIcon;
+        private System.Windows.Forms.ToolStripMenuItem 我的BToolStripMenuItem;
     }
 }
 
